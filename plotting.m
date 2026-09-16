@@ -6,7 +6,7 @@ f = 60;  % in Hz
 phase = 25;  % in degrees
 V_0 = 36;  % initial voltage
 
-V = V_0 * sin(2 * pi * f * x + deg2rad(phase)); % Calculate voltage over time
+V = V_0 * cos(2 * pi * f * x + deg2rad(phase)); % Calculate voltage over time
 
 % Plot voltage over time
 figure;
