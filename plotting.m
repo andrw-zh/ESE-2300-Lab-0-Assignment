@@ -42,3 +42,23 @@ text(9, 17, trendlineEquation, FontSize=14)
 legend("Original Data", "Trendline", "Location", "Best", "FontSize", 14)
 
 hold off;
+
+%% 14. Solving SLEs
+
+% Write SLEs in Ax = b form
+A = [10, 16, 1, 3, 1;
+    2, -13, 22, 0, 0;
+    11, 7, 3, 5, -8;
+    4, 0, 0, 11, 3;
+    2, 6, 1, -3, -6;];
+b = [12; 5; 9; 4; 8];
+
+x = A \ b; % Solution to Ax = b
+
+% Display the solution
+disp('The solution to the system of linear equations is:');
+fprintf('a = %.2f\n', x(1))
+fprintf('b = %.2f\n', x(2))
+fprintf('c = %.2f\n', x(3))
+fprintf('d = %.2f\n', x(4))
+fprintf('e = %.2f\n', x(5))
